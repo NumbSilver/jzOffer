@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <a href="javascript:;">0</a>
+        <a href="javascript:;">1</a>
+        <a href="javascript:;">2</a>
+        <a href="javascript:;">3</a>
+        <a href="javascript:;">4</a>
+        <a href="javascript:;">5</a>
+        <a href="javascript:;">6</a>
+        <a href="javascript:;">7</a>
+        <a href="javascript:;">8</a>
+        <a href="javascript:;">9</a>
+    </div>
+    <script type="text/javascript">
+        const a = document.querySelectorAll('a')
+        for(let i=0;i<a.length;i++){
+            a[i].addEventListener('click',function(){
+                console.log(i)
+            })
+        }
+
+    </script>
+</body>
+</html>
